@@ -1,3 +1,4 @@
+FROM kimaero/arm64v8-phantomjs
 FROM arm64v8/node:8.11-alpine
 
 RUN apk add --update git mercurial && \
