@@ -4,9 +4,11 @@ RUN apk add --update git mercurial && \
     git clone https://github.com/os-js/OS.js.git app && \
     apk del git mercurial
 
+RUN apk add --update yarn
+
 WORKDIR /app
 
-RUN npm install
+RUN yarn install
 RUN node osjs build
 
 EXPOSE 8000
