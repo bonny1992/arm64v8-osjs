@@ -1,0 +1,1 @@
+docker run -p 8088:8000 --restart unless-stopped -d --name arm64v8-osjs arm64v8-osjs:latest
